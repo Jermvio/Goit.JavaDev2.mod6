@@ -1,8 +1,8 @@
-package DatabaseClasses;
+package entities;
 
 public class MaxSalaryWorkers {
-    String name;
-    int salary;
+    private String name;
+    private int salary;
 
     public String getName() {
         return name;

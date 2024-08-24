@@ -1,8 +1,8 @@
-package DatabaseClasses;
+package entities;
 
 public class ProjectPrices {
-    int id;
-    int cost;
+    private int id;
+    private int cost;
 
     public int getId() {
         return id;

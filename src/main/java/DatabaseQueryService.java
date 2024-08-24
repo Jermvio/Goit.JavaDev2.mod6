@@ -1,4 +1,4 @@
-import DatabaseClasses.*;
+import entities.*;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -47,7 +47,7 @@ public class DatabaseQueryService {
                 LongestProjects lp = new LongestProjects();
 
                 lp.setId(resultSet.getInt("id"));
-                lp.setLength_in_months(resultSet.getLong("length_in_months"));
+                lp.setLengthInMonths(resultSet.getLong("length_in_months"));
                 longestProjectsList.add(lp);
             }
         } catch (SQLException e) {
@@ -66,7 +66,7 @@ public class DatabaseQueryService {
                 MaxProjectsClients mpc = new MaxProjectsClients();
 
                 mpc.setName(resultSet.getString("name"));
-                mpc.setProjects_count(resultSet.getInt("frequency"));
+                mpc.setProjectsCount(resultSet.getInt("frequency"));
                 maxProjectsClientsList.add(mpc);
             }
         } catch (SQLException e) {

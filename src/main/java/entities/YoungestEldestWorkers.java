@@ -1,10 +1,10 @@
-package DatabaseClasses;
+package entities;
 
 import java.sql.Date;
 
 public class YoungestEldestWorkers {
-    String name;
-    Date birthday;
+    private String name;
+    private Date birthday;
 
     public String getName() {
         return name;
